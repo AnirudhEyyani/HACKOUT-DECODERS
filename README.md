@@ -25,10 +25,10 @@ An online web portal to show recent financial news with Crypto of choice to over
 Obtaining financial literacy is one of the most important things an individual can do to ensure prolonged financial stability. 
 Strong financial knowledge and decision-making skills help people weigh options and make informed choices for their financial situations, such as deciding how and when to save and spend, comparing costs before a big purchase, and planning for retirement or other long-term savings. 
 
-While investing in stock markets has become more popular in recent times, overall penetration remains low — only 2.78 crore Indians invest in the stock markets, which is around 2% of the country’s population. In comparison, over 50% of Americans own stocks. This is a mind set that can be changes if people are exposed to topics like investments and stocks which is a great financial practice. 
+While investing in stock markets has become more popular in recent times, overall penetration remains low — only 2.78 crore Indians invest in the stock markets, which is around 2% of the country’s population. In comparison, over 50% of Americans own stocks. This is a mind set that can be changes if people are exposed to topics like investments, stocks and crypto which is a great financial practice. 
 
 
-DotCoin provides a watch-list for stocks and also provides relevent financial news and insights so that they have a mind set of using money wisely.
+CryptoTrader provides a watch-list for Crypto and also provides relevent financial news and insights so that they have a mind set of using money wisely.
 
 ## About the project
 
@@ -75,7 +75,7 @@ This is our first time integrating different api's with a web application.
 We intially thought of making a flutter app but were not able to proceed due to lack of resources.
 
 
-## What's next for DotCoin
+## What's next for CryptoTrader
 
 Due to the time constraint of the hackathon, many things were accomplished only till half way. These include :
 
