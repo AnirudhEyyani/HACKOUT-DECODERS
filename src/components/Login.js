@@ -74,12 +74,6 @@ function Login() {
                 <a  onClick = {googleSignUp}>
                     <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
                 </a>
-                {/* <a href="">
-                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png"/>
-                </a>
-                <a href="">
-                    <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/>
-                </a> */}
 	        </div>
             <div className="signup-link">
                <Link to = "/signup">Don't have an account? Sign Up</Link>
