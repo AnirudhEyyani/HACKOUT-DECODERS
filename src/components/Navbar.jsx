@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo"><Link to="/">CryptoTrader</Link></Typography.Title>
-        <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
+        <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined fill="#fff" /></Button>
       </div>
       {activeMenu && (
       <Menu theme="dark">
@@ -40,7 +40,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item icon={<DollarOutlined />}>
-          <Link to="/Invest">Invest</Link>
+          <Link to="/Invest">Playground</Link>
         </Menu.Item>
         <Menu.Item icon={<FundOutlined />}>
           <Link to="/cryptocurrencies">Crypto Currencies</Link>
