@@ -5,18 +5,6 @@ An online web portal to show recent financial news with Crypto of choice to over
 
 <br/>
 
-<p align="center">
-    
-  <p align="center">
-    
-    <a href="https://github.com/Hemang417/Hacktober-Hackathon-Decoders/bug">Report Bug</a>
-    ·
-    <a href="https:/Hemang417/Hacktober-Hackathon-Decoders/github.com//issues">Request Feature</a>
-  </p>
-</p>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -111,7 +99,7 @@ To install node@12.22.1
    ```
 Clone the repo
    ```sh
-   git clone https://github.com/Hemang417/Hacktober-Hackathon-Decoders.git
+   git clone https://github.com/AnirudhEyyani/HACKOUT-DECODERS.git
    ```
 Install NPM packages
    ```sh
