@@ -19,9 +19,9 @@ const Exchanges = () => {
     <>
       <Row>
         <Col span={6}>Exchanges</Col>
-        <Col span={5}>24h Trade Volume</Col>
-        <Col span={4}>Markets</Col>
-        <Col span={4}>Change</Col>
+        <Col span={6}>24h Trade Volume</Col>
+        <Col span={6}>Markets</Col>
+        <Col span={6}>Change</Col>
       </Row>
       <Row>
         {exchangesList.map((exchange) => (
@@ -37,11 +37,11 @@ const Exchanges = () => {
                       <Avatar className="exchange-image" src={exchange.iconUrl} />
                       <Text><strong>{exchange.name}</strong></Text>
                     </Col>
-                    <Col span={5}>${millify(exchange.volume)}</Col>
-                    <Col span={5}>{millify(exchange.numberOfMarkets)}</Col>
-                    <Col span={5}>{millify(exchange.marketShare)}%</Col>
-                    <Col span={2}><Button type="primary">Buy</Button></Col>
-                    <Col span={1}><Button>Sell</Button></Col>
+                    <Col span={6}>${millify(exchange.volume)}</Col>
+                    <Col span={6}>{millify(exchange.numberOfMarkets)}</Col>
+                    <Col span={6}>{millify(exchange.marketShare)}%</Col>
+                    {/* <Col span={2}><Button type="primary">Buy</Button></Col>
+                    <Col span={1}><Button>Sell</Button></Col> */}
                   </Row>
                   )}
               >
