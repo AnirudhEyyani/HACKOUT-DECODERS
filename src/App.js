@@ -5,6 +5,10 @@ import { Layout, Typography, Space } from 'antd';
 import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar, Invest } from './components';
 import './App.css';
 
+import Login from './components/Login'
+import Signup from './components/Signup'
+import {AuthProvider} from './context/AuthContext'
+
 const App = () => (
   <div className="app">
     <div className="navbar">
@@ -13,6 +17,7 @@ const App = () => (
     <div className="main">
       <Layout>
         <div className="routes">
+        <AuthProvider>
           <Switch>
             <Route exact path="/">
               <Homepage />
@@ -32,7 +37,14 @@ const App = () => (
             <Route exact path="/news">
               <News />
             </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
           </Switch>
+          </AuthProvider>
         </div>
       </Layout>
       <div className="footer">

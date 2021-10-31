@@ -2,11 +2,38 @@ import React, { useEffect, useState } from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
 import { Card, Row, Col, Input } from 'antd';
+import { useHistory } from 'react-router';
+import {useAuth} from '../context/AuthContext';
 
 import { useGetCryptosQuery } from '../services/cryptoApi';
 import Loader from './Loader';
 
 const Invest = ({ simplified }) => {
+  const {logout,currentUser} = useAuth()
+    const history = useHistory()
+    const [error, setError] = useState('')
+    // logout
+    async function handleLogout() {
+      setError('')
+      try {
+          await logout()
+          history.push("/login")
+      }
+      catch{
+          setError('failed to log out')
+      }
+    } 
+    // check if user is logged in or not
+    useEffect(() => {
+      if(currentUser) {
+        history.push('/invest')
+      }
+      else {
+        history.push('/login')
+      }
+    },[])
+
+    
   const count = simplified ? 10 : 100;
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState();
@@ -24,6 +51,7 @@ const Invest = ({ simplified }) => {
 
   return (
     <>
+    <button onClick = {()=> handleLogout()} className = "py-2 px-4 bg-blue-400 text-black">Logout</button>
       {!simplified && (
         <div className="search-crypto">
           <Input placeholder="Search Cryptocurrency" onChange={(e) => setSearchTerm(e.target.value.toLowerCase())} />
